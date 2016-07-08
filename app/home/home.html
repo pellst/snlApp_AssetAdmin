@@ -1,0 +1,17 @@
+<ion-nav-bar class="bar-balanced">
+    <h1 class="title">Asset Schedule</h1>
+</ion-nav-bar>
+
+<ion-tabs class="tabs-energized tabs-icon-top">
+    <ion-tab title="Category" icon="ion-home" href="#/home/category">
+        <ion-nav-view name="tab-category"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Equipment" icon="ion-star" ui-sref="home.equipment">
+        <ion-nav-view name="tab-equipment"></ion-nav-view>
+    </ion-tab>
+
+   <ion-tab title="Asset" icon="ion-gear-a" ui-sref="app.assets">
+        <ion-nav-view name="tab-asset"></ion-nav-view>
+    </ion-tab>    
+</ion-tabs>

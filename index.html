@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>SNL App</title>
+
+
+
+
+    
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  
+
+
+
+         <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
+
+          <!-- Leave out Storage -->
+          <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script> -->
+
+ <!--        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBxhExztPswNrrtepe3nq9HzSTsx3NdBbc",
+            authDomain: "project-4082093448413601653.firebaseapp.com",
+            databaseURL: "https://project-4082093448413601653.firebaseio.com",
+            storageBucket: "project-4082093448413601653.appspot.com",
+          };
+          firebase.initializeApp(config);
+        </script> -->
+
+
+
+
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+   <script src="lib/lodash/dist/lodash.min.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="app/app.js"></script>
+    <!-- <script src="app/controllers.js"></script> -->
+    
+
+    <script src="app/services/snlApi.js"></script>
+    <script src="app/clients/clients-ctrl.js"></script>
+
+    <script src="app/assets/assets-ctrl.js"></script>
+    <script src="app/assets/asset-detail-ctrl.js"></script>
+    <!--<script src="app/equipment/equipment-ctrl.js"></script>-->
+
+    <script src="app/home/category-ctrl.js"></script>
+    <script src="app/home/equipment-ctrl.js"></script>
+
+    <script src="app/templates/auth-signin-ctrl.js"></script>
+    <script src="app/templates/auth-signup-ctrl.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBxhExztPswNrrtepe3nq9HzSTsx3NdBbc",
+    authDomain: "project-4082093448413601653.firebaseapp.com",
+    databaseURL: "https://project-4082093448413601653.firebaseio.com",
+    storageBucket: "project-4082093448413601653.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+    
+       <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+ 
+    
+
+  </head>
+
+  <body ng-app="snlApp">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

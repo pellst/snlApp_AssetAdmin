@@ -1,0 +1,32 @@
+<ion-view title=" " ng-controller="AssetsCtrl as vm">
+  <ion-content class="has-header">
+    <h1>Assets</h1>
+    <div class = "list">
+    	<!--<a class="item item-icon-right" ng-repeat="assets in vm.Assets" ng-click="vm.selectAssets(id)">
+    		{{assets.categoryName}}:{{assets.Equipment.equipmentName}} 
+    		<i class="icon ion-chevron-right ion-accessory"></i>
+
+    	</a>-->
+    	<div ng-repeat="assetcat in vm.Assets">
+            <div class="item item-divider">
+                <a href="#/app/assets/{{assetcat.catID}}" class="item item-energized item-icon-right">
+                    {{assetcat.catID}} : {{assetcat.categoryName}}
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </a>
+
+
+
+            </div>
+<!--              <div ng-repeat="equip in assetcat.Equipment">
+                <a href="#/app/assets/{{equip.equipID}}" class="item item-icon-right">
+                    {{equip.equipID}} : {{equip.equipmentName}}
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </a>
+            </div> -->
+        </div>
+    		
+    </div>
+
+  </ion-content>
+</ion-view>
+

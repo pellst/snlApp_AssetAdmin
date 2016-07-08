@@ -1,0 +1,14 @@
+<ion-view ng-controller="CategoryCtrl as vm">
+  <ion-content class="has-header">
+    <h1>Category</h1>
+    <div class = "list">
+    	<a class="item item-icon-right" ng-repeat="category in vm.Category" ng-click="vm.selectCategory(category.catID)">
+    		{{category.categoryName}} 
+    		<i class="icon ion-chevron-right ion-accessory"></i>
+
+    	</a>
+    		
+    </div>
+
+  </ion-content>
+</ion-view>

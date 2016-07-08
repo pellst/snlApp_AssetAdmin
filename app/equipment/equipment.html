@@ -1,0 +1,14 @@
+<ion-view ng-controller="EquipmentCtrl as vm">
+  <ion-content class="has-header">
+    <h1>Equipment</h1>
+    <div class = "list">
+    	<a class="item item-icon-right" ng-repeat="Equipment in vm.Equipment" ng-click="vm.selectEquipment(Equipment.equipID)">
+    		{{Equipment.equipmentName}}
+    		<i class="icon ion-chevron-right ion-accessory"></i>
+
+    	</a>
+    		
+    </div>
+
+  </ion-content>
+</ion-view>
